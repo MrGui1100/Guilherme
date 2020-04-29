@@ -21,7 +21,7 @@ POST /LTM/resgate
 ### Headers
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| Authorization | `String` | <p>Autenticaï¿½ï¿½o no padrï¿½o Auth Basic</p> |
+| Authorization | `String` | <p>Autentica��o no padr�o Auth Basic</p> |
 
 ### Parameters - `Parameter`
 | Name     | Type       | Description                           |
@@ -29,7 +29,7 @@ POST /LTM/resgate
 | CNPJ | `String` | <p>Portador do vale gerado na plataforma, precisa estar cadastrado</p> |
 | email | `String` |  |
 | razaoSocial | `String` |  |
-| creditos | `Number` | <p>Valor do vale ï¿½ gerado na plataforma</p> |
+| creditos | `Number` | <p>Valor do vale � gerado na plataforma</p> |
 
 ### Success response
 
@@ -38,7 +38,7 @@ POST /LTM/resgate
 |:---------|:-----------|:--------------------------------------|
 | success | `Boolean` |  |
 | CNPJ | `String` |  |
-| Codigo | `String` | <p>Cï¿½digo do vale gerado na plataforma. Deve ser passado como parï¿½metro ao endpoint /LTM/aprovacao para ser habilitado para uso</p> |
+| Codigo | `String` | <p>C�digo do vale gerado na plataforma. Deve ser passado como par�metro ao endpoint /LTM/aprovacao para ser habilitado para uso</p> |
 
 ### Error response example
 
@@ -60,7 +60,7 @@ HTTP/1.1 400 Bad Request
 {
     "success": false,
     "code": "parametros.invalidos",
-    "message": "Parï¿½metros invï¿½lidos"
+    "message": "Par�metros inv�lidos"
 }
 ```
 
@@ -71,7 +71,7 @@ HTTP/1.1 400 Bad Request
 {
     "success": false,
     "code": "cnpj.nao.encontrado",
-    "message": "CNPJ nï¿½o cadastrado"
+    "message": "CNPJ n�o cadastrado"
 }
 ```
 
@@ -96,13 +96,13 @@ POST /LTM/aprovacao
 ### Headers
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| Authorization | `String` | <p>Autenticaï¿½ï¿½o no padrï¿½o Auth Basic</p> |
+| Authorization | `String` | <p>Autentica��o no padr�o Auth Basic</p> |
 
 ### Parameters - `Parameter`
 | Name     | Type       | Description                           |
 |:---------|:-----------|:--------------------------------------|
-| Codigo | `String` | <p>Cï¿½digo do vale gerado na plataforma. Retornado no endpoint /LTM/resgate</p> |
-| CodigoLTM | `String` | <p>Cï¿½digo gerado pela LTM</p> |
+| Codigo | `String` | <p>C�digo do vale gerado na plataforma. Retornado no endpoint /LTM/resgate</p> |
+| CodigoLTM | `String` | <p>C�digo gerado pela LTM</p> |
 
 ### Success response
 
@@ -131,7 +131,7 @@ HTTP/1.1 400 Bad Request
 {
     "success": false,
     "code": "parametros.invalidos",
-    "message": "Parï¿½metros invï¿½lidos"
+    "message": "Par�metros inv�lidos"
 }
 ```
 
@@ -142,7 +142,7 @@ HTTP/1.1 400 Bad Request
 {
     "success": false,
     "code": "voucher.nao.encontrado",
-    "message": "Voucher nï¿½o encontrado"
+    "message": "Voucher n�o encontrado"
 }
 ```
 
@@ -153,7 +153,7 @@ HTTP/1.1 400 Bad Request
 {
     "success": false,
     "code": "voucher.erro.aprovado",
-    "message": "Voucher jï¿½ aprovado"
+    "message": "Voucher j� aprovado"
 }
 ```
 
