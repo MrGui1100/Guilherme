@@ -21,7 +21,7 @@ POST /LTM/resgate
 ### Headers
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| Authorization | `String` | <p>Autentica��o no padr�o Auth Basic</p> |
+| AuthorizationAutentica | `String` | <p>��o no padr�o Auth Basic</p> |
 
 ### Parameters - `Parameter`
 | Name     | Type       | Description                           |
